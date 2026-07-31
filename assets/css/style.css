@@ -241,6 +241,12 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
+.dishes .dishes-content a {
+    text-decoration: none;
+    color: #ff5722;
+    cursor: pointer;
+}
+
 .dishes .dishes-items {
     display: flex;
     justify-content: space-evenly;
@@ -655,7 +661,7 @@ footer {
 
 /* Search Section */
 .search-area {
-    min-height: 200px;
+    min-height: 150px;
     max-width: 100%;
     margin-top: 50px;
     margin-left: 1.5rem;
@@ -721,4 +727,147 @@ footer {
 .search-area .category-box select option {
     font-size: 12px;
     font-weight: bold;
+}
+
+/* Dish Nav Section */
+.dish-nav {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    height: 50px;
+    max-width: 100%;
+}
+
+.dish-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-nav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 12px;
+    box-shadow: 0 2px 10px rgba(20, 19, 19, 0.5);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dish-nav ul li:hover {
+    color: white;
+    background-color: #ff5722;
+}
+
+.active-category {
+    background: #ff5722;
+    color: white;
+}
+
+.menu {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 4rem;
+}
+
+.menu .menu-dish {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(20, 19, 19, 0.6);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.menu-dish .menu-left-wrapper {
+    display: flex;
+}
+
+.menu-dish img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu .menu-dish .menu-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.menu .menu-dish .menu-left-content h5 {
+    font-weight: 400;
+}
+
+.menu .menu-dish .menu-left-content p {
+    font-size: 10px;
+}
+
+.menu .menu-dish .menu-left-content .dish-another-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-dish .menu-left-content .dish-another-content .discount {
+    font-size: 12px;
+    font-weight: bold;
+    color: green;
+}
+
+.menu .menu-dish .menu-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu .menu-dish .menu-right-content .dish-price {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+
+    .search-area form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .category-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .dish-nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .menu {
+        margin: 5rem 1rem;
+    }
+
+    .menu .menu-dish {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-dish .menu-left-wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-right-content .dish-price {
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .menu-right-content button {
+        align-self: flex-end;
+    }
 }

@@ -23,10 +23,10 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="#">Offer</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="offer.html">Offer</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cart.html">Cart</a></li>
           <li class="colored-btn"><a href="#">Login/Sign Up</a></li>
         </ul>
       </nav>
@@ -34,72 +34,80 @@
 
     <!-- Main -->
     <main>
+      <!-- Search Section -->
       <section class="search-area">
         <h3>Our Menu</h3>
         <form>
           <div class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" name="search" placeholder="Search for food..." />
+            <input
+              type="text"
+              name="search"
+              placeholder="Search for food..."
+              aria-label="Search food"
+            />
           </div>
           <div class="category-box">
             <select name="category" class="category-select">
               <option value="all">All Categories</option>
               <optgroup label="pizza">
                 <option value="cheese-burst-pizza">Cheese Burst Pizza</option>
-                <option value="cheese-burst-pizza">Chicken Pizza</option>
-                <option value="cheese-burst-pizza">Farmhouse Pizza</option>
-                <option value="cheese-burst-pizza">
+                <option value="chicken-pizza">Chicken Pizza</option>
+                <option value="farmhouse-pizza">Farmhouse Pizza</option>
+                <option value="mexican-green-wave-pizza">
                   Mexican Green Wave Pizza
                 </option>
-                <option value="cheese-burst-pizza">Paneer Tikka Pizza</option>
+                <option value="paneer-tikka-pizza">Paneer Tikka Pizza</option>
               </optgroup>
               <optgroup label="burger">
-                <option value="cheese-burst-pizza">Cheese Burger</option>
-                <option value="cheese-burst-pizza">Classic Veg Burger</option>
-                <option value="cheese-burst-pizza">Crispy Veg Burger</option>
-                <option value="cheese-burst-pizza">Paneer Burger</option>
-                <option value="cheese-burst-pizza">
+                <option value="cheese-burger">Cheese Burger</option>
+                <option value="classic-veg-burger">Classic Veg Burger</option>
+                <option value="crispy-veg-burger">Crispy Veg Burger</option>
+                <option value="paneer-burger">Paneer Burger</option>
+                <option value="tandoori-chicken-burger">
                   Tandoori Chicken Burger
                 </option>
               </optgroup>
               <optgroup label="chinese">
-                <option value="cheese-burst-pizza">Manchurien Dry</option>
-                <option value="cheese-burst-pizza">
+                <option value="manchurian-dry">Manchurian Dry</option>
+                <option value="schezwan-chicken-noodles">
                   Schezwan Chicken Noodles
                 </option>
-                <option value="cheese-burst-pizza">Spring Roll</option>
-                <option value="cheese-burst-pizza">Veg Fried Rice</option>
-                <option value="cheese-burst-pizza">Veg Hakka Noodles</option>
+                <option value="spring-roll">Spring Roll</option>
+                <option value="veg-fried-rice">Veg Fried Rice</option>
+                <option value="veg-hakka-noodles">Veg Hakka Noodles</option>
               </optgroup>
               <optgroup label="main-course">
-                <option value="cheese-burst-pizza">Butter Naan</option>
-                <option value="cheese-burst-pizza">Chicken Biryani</option>
-                <option value="cheese-burst-pizza">Dal Makhani</option>
-                <option value="cheese-burst-pizza">Jeera Rice</option>
-                <option value="cheese-burst-pizza">Paneer Butter Masala</option>
+                <option value="butter-naan">Butter Naan</option>
+                <option value="chicken-biryani">Chicken Biryani</option>
+                <option value="dal-makhani">Dal Makhani</option>
+                <option value="jeera-rice">Jeera Rice</option>
+                <option value="paneer-butter-masala">
+                  Paneer Butter Masala
+                </option>
               </optgroup>
               <optgroup label="beverages">
-                <option value="cheese-burst-pizza">Chocolate Shake</option>
-                <option value="cheese-burst-pizza">Cold Coffee</option>
-                <option value="cheese-burst-pizza">Lemon Majito</option>
-                <option value="cheese-burst-pizza">Mango Shake</option>
-                <option value="cheese-burst-pizza">Oreo Shake</option>
+                <option value="chocolate-shake">Chocolate Shake</option>
+                <option value="cold-coffee">Cold Coffee</option>
+                <option value="lemon-mojito">Lemon Majito</option>
+                <option value="mango-shake">Mango Shake</option>
+                <option value="oreo-shake">Oreo Shake</option>
               </optgroup>
               <optgroup label="desserts">
-                <option value="cheese-burst-pizza">Chocolate Cake</option>
-                <option value="cheese-burst-pizza">Gulab Jamun</option>
-                <option value="cheese-burst-pizza">Red Velvet Cake</option>
-                <option value="cheese-burst-pizza">Vanila Ice-cream</option>
-                <option value="cheese-burst-pizza">Chocolate Ice-cream</option>
+                <option value="chocolate-cake">Chocolate Cake</option>
+                <option value="gulab-jamun">Gulab Jamun</option>
+                <option value="red-velvet-cake">Red Velvet Cake</option>
+                <option value="vanila-ice-cream">Vanila Ice-cream</option>
+                <option value="chocolate-ice-cream">Chocolate Ice-cream</option>
               </optgroup>
               <optgroup label="fast-food">
-                <option value="cheese-burst-pizza">Cheese Garlic Bread</option>
-                <option value="cheese-burst-pizza">French Fries</option>
-                <option value="cheese-burst-pizza">
+                <option value="cheese-garlic-bread">Cheese Garlic Bread</option>
+                <option value="french-fries">French Fries</option>
+                <option value="garlic-bread-sandwich">
                   Garlic Bread Sandwich
                 </option>
-                <option value="cheese-burst-pizza">Veg Sandwich</option>
-                <option value="cheese-burst-pizza">Garlic Bread</option>
+                <option value="veg-sandwich">Veg Sandwich</option>
+                <option value="garlic-bread">Garlic Bread</option>
               </optgroup>
             </select>
             <select name="sort" class="sort-select">
@@ -112,6 +120,172 @@
             </select>
           </div>
         </form>
+      </section>
+
+      <!-- Dish Nav Section -->
+      <section class="dish-nav">
+        <ul>
+          <li class="active-category">All</li>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Biryani</li>
+          <li>Pasta</li>
+          <li>Drinks</li>
+          <li>Desserts</li>
+          <li>Chinese</li>
+        </ul>
+      </section>
+
+      <!-- Menu Section -->
+
+      <section class="menu">
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/pizza/paneer-tikka-pizza.jpg"
+              alt="paneer tikka pizza"
+            />
+            <div class="menu-left-content">
+              <h4>Paneer Tikka Pizza</h4>
+
+              <h5>Smoky paneer, cheesy, spicy restaurant favourite</h5>
+
+              <p>Cheesy & fresh bowl</p>
+
+              <div class="dish-another-content">
+                <div class="discount">20% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>4.5
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;350</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
+
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/burger/crispy-veg-burger.jpg"
+              alt="crispy veg burger"
+            />
+            <div class="menu-left-content">
+              <h4>Crispy Veg Burger</h4>
+              <h5>Crunchy veggies, spicy, perfectly stacked classic</h5>
+              <p>Crunch, spicy veg delight</p>
+              <div class="dish-another-content">
+                <div class="discount">15% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>4.5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;200</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
+
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/main-course/chicken-biryani.jpg"
+              alt="chicken biryani"
+            />
+            <div class="menu-left-content">
+              <h4>Chicken Biryani</h4>
+              <h5>Fragrant basmati, juicy chicken, royal spice</h5>
+              <p>Fragrant, juicy, spicy perfection</p>
+              <div class="dish-another-content">
+                <div class="discount">30% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>4.1
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;350</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
+
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/chinese/veg-hakka-noodles.jpg"
+              alt="veg hakka noodles"
+            />
+            <div class="menu-left-content">
+              <h4>Veg Hakka Noodles</h4>
+              <h5>Wok-tossed, spicy, garlicky veg noodles</h5>
+              <p>Spicy wok-tossed veg noodles</p>
+              <div class="dish-another-content">
+                <div class="discount">10% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>4.0
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;140</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
+
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/desserts/gulab-jamun.jpg"
+              alt="gulab jamun"
+            />
+            <div class="menu-left-content">
+              <h4>Gulab Jamun</h4>
+              <h5>Soft, syrupy, melt-in-mouth sweet balls</h5>
+              <p>Syrupy, melt-in-mouth sweetness</p>
+              <div class="dish-another-content">
+                <div class="discount">15% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>5.0
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;150</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
+
+        <div class="menu-dish">
+          <div class="menu-left-wrapper">
+            <img
+              src="assets/images/beverages/oreo-shake.jpg"
+              alt="oreo shake"
+            />
+            <div class="menu-left-content">
+              <h4>Oreo Shake</h4>
+              <h5>Thick, creamy, cookie-crunch oreo bliss</h5>
+              <p>Creamy cookie crunch shake</p>
+              <div class="dish-another-content">
+                <div class="discount">20% OFF</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star orange"></i>3.9
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right-content">
+            <div class="dish-price">&#8377;200</div>
+            <button class="colored-btn">ADD</button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -127,8 +301,8 @@
           <h3>Quick Links</h3>
           <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
-          <a href="#">Offers</a>
-          <a href="#">Contact</a>
+          <a href="offer.html">Offers</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-box">
