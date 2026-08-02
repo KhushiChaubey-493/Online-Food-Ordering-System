@@ -710,12 +710,14 @@ footer {
 .search-area .category-box {
     display: flex;
     gap: 15px;
+    width: 45%;
 }
 
 .search-area .category-box select {
     padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    width: 100%;
 
 }
 
@@ -860,6 +862,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .menu-right-content .dish-price {
